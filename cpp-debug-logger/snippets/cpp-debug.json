@@ -1,0 +1,101 @@
+{
+  "Debug Log with Choice": {
+    "prefix": ["log", "dlog"],
+    "body": [
+      "${1|std::cout,std::cerr,std::clog|} << \"${2|[DEBUG],[ERROR],[INFO],[WARNING],[TRACE]|}\" << \" ${3:message}: \" << ${4:variable} << std::endl;$0"
+    ],
+    "description": "Основной debug log с выбором потока и уровня"
+  },
+  
+  "Log Variable": {
+    "prefix": "logv",
+    "body": [
+      "${1|std::cout,std::cerr,std::clog|} << \"${2:varName} = \" << ${2:varName} << std::endl;$0"
+    ],
+    "description": "Быстрое логирование переменной"
+  },
+  
+  "Log Function Entry": {
+    "prefix": "logenter",
+    "body": [
+      "${1|std::cout,std::clog|} << \"→ Entering ${2:functionName}(\" << ${3:\"params\"} << \")\" << std::endl;$0"
+    ],
+    "description": "Лог входа в функцию"
+  },
+  
+  "Log Function Exit": {
+    "prefix": "logexit",
+    "body": [
+      "${1|std::cout,std::clog|} << \"← Leaving ${2:functionName}, result: \" << ${3:result} << std::endl;$0"
+    ],
+    "description": "Лог выхода из функции"
+  },
+  
+  "Log with File and Line": {
+    "prefix": "logline",
+    "body": [
+      "${1|std::cout,std::cerr,std::clog|} << \"[\" << __FILE__ << \":\" << __LINE__ << \"] ${2:message}: \" << ${3:data} << std::endl;$0"
+    ],
+    "description": "Лог с именем файла и номером строки"
+  },
+  
+  "Log with Function Name": {
+    "prefix": "logfname",
+    "body": [
+      "${1|std::cout,std::clog|} << \"[\" << __FUNCTION__ << \"] ${2:message}: \" << ${3:data} << std::endl;$0"
+    ],
+    "description": "Лог с именем функции"
+  },
+  
+  "Conditional Debug Log": {
+    "prefix": "logif",
+    "body": [
+      "#ifdef ${1|DEBUG,NDEBUG,_DEBUG,VERBOSE|}",
+      "    ${2|std::cout,std::clog|} << \"${3:message}: \" << ${4:variable} << std::endl;",
+      "#endif$0"
+    ],
+    "description": "Условный debug лог"
+  },
+  
+  "Log Multiple Variables": {
+    "prefix": "logmulti",
+    "body": [
+      "${1|std::cout,std::clog|} << \"${2:label}: \"",
+      "    << \"${3:var1} = \" << ${3:var1}",
+      "    << \", ${4:var2} = \" << ${4:var2}",
+      "    << std::endl;$0"
+    ],
+    "description": "Лог нескольких переменных"
+  },
+  
+  "Log Expression": {
+    "prefix": "logexpr",
+    "body": [
+      "${1|std::cout,std::clog|} << \"${2:expression} = \" << (${2:expression}) << std::endl;$0"
+    ],
+    "description": "Логирование выражения с результатом"
+  },
+  
+
+  
+  "Log Container": {
+    "prefix": "logvec",
+    "body": [
+      "${1|std::cout,std::clog|} << \"${2:container}[\" << ${2:container}.size() << \"]: \";",
+      "for(const auto& item : ${2:container}) {",
+      "    ${1|std::cout,std::clog|} << item << \" \";",
+      "}",
+      "${1|std::cout,std::clog|} << std::endl;$0"
+    ],
+    "description": "Логирование контейнера (vector, array)"
+  },
+  
+  "Log Pointer": {
+    "prefix": "logptr",
+    "body": [
+      "${1|std::cout,std::clog|} << \"${2:ptr} = \" << static_cast<void*>(${2:ptr})",
+      "    << \" -> \" << ${3:*${2:ptr}} << std::endl;$0"
+    ],
+    "description": "Логирование указателя с адресом и значением"
+  }
+}
