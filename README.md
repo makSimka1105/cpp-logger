@@ -19,6 +19,20 @@ git clone https://github.com/makSimka1105/cpp-logger.git
 ```
 code --install-extension cpp-debug-snippets-1.0.0.vsix
 ```
+Если не работает code:
+```
+# Добавьте VS Code в PATH
+cat << 'EOF' >> ~/.zprofile
+export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
+EOF
+
+# Перезагрузите shell
+source ~/.zprofile
+
+# Теперь установите расширение
+code --install-extension cpp-debug-snippets-1.0.0.vsix
+
+```
 3. Перезагрузите VScode 
 
 В вашем коде наните печатать префикс и выберите нужный снипет
