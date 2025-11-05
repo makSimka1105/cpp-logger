@@ -1,5 +1,5 @@
 {
-  "name": "cpp-debug-snippets",
+  "name": "cpp-logger",
   "displayName": "C++ Debug Snippets",
   "description": "Comprehensive debug logging snippets for C++ with stream selection and log levels",
   "version": "1.0.0",
