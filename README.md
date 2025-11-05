@@ -11,11 +11,11 @@
 - 🔍 Автоматическое добавление файла, строки, функции
 
 ## Использование
-1. Склонировать репозиторий командой 
+1. Склонировать репозиторий командой :
 ```
 git clone https://github.com/makSimka1105/cpp-logger.git
 ```
-2. Установить .vsix файла
+2. Установить .vsix файла :
 ```
 code --install-extension cpp-debug-snippets-1.0.0.vsix
 ```
@@ -33,7 +33,7 @@ source ~/.zprofile
 code --install-extension cpp-debug-snippets-1.0.0.vsix
 
 ```
-3. Перезагрузите VScode 
+3. Перезагрузите VScode .
 
 В вашем коде наните печатать префикс и выберите нужный снипет
 
