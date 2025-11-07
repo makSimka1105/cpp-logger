@@ -3,56 +3,12 @@
 
 ## Возможности
 
-- 🚀 10 готовых шаблонов для различных сценариев логирования
+- 🚀 11 готовых шаблонов для различных сценариев логирования
 - ⌨️ Быстрая навигация между полями через Tab
 - 🎯 Выбор потока вывода (cout/cerr/clog)
 - 📊 Логирование контейнеров, указателей, функций
 - 🔍 Автоматическое добавление файла, строки, функции
 
-## Установка
-1. Для начала клонируем репозиторий:
-```
-git clone https://github.com/makSimka1105/cpp-logger.git
-```
-2. Установить .vsix файла :
-- Для Linux :
-
-```
-code --install-extension ./cpp-logger/cpp-logger-1.0.0.vsix
-```
-Если не работает code(также для win или mac):
-```
-# Добавьте VS Code в PATH
-cat << 'EOF' >> ~/.zprofile
-export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
-EOF
-
-# Перезагрузите shell
-source ~/.zprofile
-
-# Теперь установите расширение
-code --install-extension cpp-debug-snippets-1.0.0.vsix
-
-```
-- Для любой ос через графический интерфейс:
-
-    - Откройте VS Code
-
-    - Нажмите Ctrl+Shift+X (Extensions)
-
-    - Нажмите на три точки ... в верхнем правом углу
-
-    - Выберите "Install from VSIX..."
-
-    - Найдите файл cpp-debug-snippets-1.0.0.vsix
-
-    - Нажмите "Install"
-
-
-
-3. Перезагрузите VScode .
-
-В вашем коде наните печатать префикс и выберите нужный снипет
 
 ## Основные префиксы:
 
