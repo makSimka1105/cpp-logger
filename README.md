@@ -16,8 +16,9 @@ git clone https://github.com/makSimka1105/cpp-logger.git
 ```
 2. Установить .vsix файла :
 - Для Linux :
+
 ```
-code --install-extension cpp-debug-snippets-1.0.0.vsix
+code --install-extension ./cpp-logger/cpp-logger-1.0.0.vsix
 ```
 Если не работает code(также для win или mac):
 ```
@@ -35,18 +36,17 @@ code --install-extension cpp-debug-snippets-1.0.0.vsix
 ```
 - Для любой ос через графический интерфейс:
 
+    - Откройте VS Code
 
-    Откройте VS Code
+    - Нажмите Ctrl+Shift+X (Extensions)
 
-    Нажмите Ctrl+Shift+X (Extensions)
+    - Нажмите на три точки ... в верхнем правом углу
 
-    Нажмите на три точки ... в верхнем правом углу
+    - Выберите "Install from VSIX..."
 
-    Выберите "Install from VSIX..."
+    - Найдите файл cpp-debug-snippets-1.0.0.vsix
 
-    Найдите файл cpp-debug-snippets-1.0.0.vsix
-
-    Нажмите "Install"
+    - Нажмите "Install"
 
 
 
